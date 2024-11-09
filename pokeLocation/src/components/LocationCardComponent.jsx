@@ -12,7 +12,7 @@ export const LocationCardComponent = (props) => {
 
             response.json().then((data) => {
                 console.log(data)
-                setlocationInformation(data)
+                setLocationInformation(data)
                 setIsInformationLoaded(true)
             })
         })
@@ -22,8 +22,8 @@ export const LocationCardComponent = (props) => {
     return <article>
         {isInformationLoaded === true ? <>
 
-            <img src={locationInformation.sprites.back_default} />
-            <img src={locationInformation.sprites.front_default} />
+            {/* <img src={locationInformation.sprites.back_default} />
+            <img src={locationInformation.sprites.front_default} />  */}
             <h4>{props.name}</h4>
             <a href={props.url}>Más información</a></> : <p>Loading</p>}
 

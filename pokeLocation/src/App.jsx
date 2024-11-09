@@ -1,6 +1,5 @@
 import "./app.css";
 import { LocationCardComponent } from "./components/LocationCardComponent";
-import { PokemonSearchComponent } from "./components/pokemonSearchComponent";
 import { NavBarComponent } from "./components/NavBar/navbarComponent";
 
 
@@ -105,14 +104,11 @@ export const App = () => {
           easily accessible through a modern free open-source RESTful API.</p>
       </header>
       <section>
-        {apiInformation.results.map((pokemon,index) => {
-          return <locationInformatioLocationCardComponentn key={index} name={pokemon.name} url={pokemon.url} />
+        {apiInformation.results.map((location,index) => {
+          return <LocationCardComponent key={index} name={location.name} url={location.url} />
         })}
       </section>
-      <section>
-        <h4>Search Pokemon</h4>
-        <PokemonSearchComponent apiInformation={apiInformation} />
-      </section>
+     
     </>
   )
 }
