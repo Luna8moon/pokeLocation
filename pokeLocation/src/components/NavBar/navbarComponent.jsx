@@ -1,5 +1,5 @@
 
-import "./pokeLocation.css"
+import "./navbar.css"
 
 export const NavBarComponent = () => {
 

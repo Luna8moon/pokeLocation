@@ -1,7 +1,7 @@
 import "./app.css";
-import { NavBarComponent } from "./components/NavBar/navbarComponent";
-import { PokemonCardComponent } from "./components/PokemonCardComponent";
+import { LocationCardComponent } from "./components/LocationCardComponent";
 import { PokemonSearchComponent } from "./components/pokemonSearchComponent";
+import { NavBarComponent } from "./components/NavBar/navbarComponent";
 
 
 export const App = () => {
@@ -106,7 +106,7 @@ export const App = () => {
       </header>
       <section>
         {apiInformation.results.map((pokemon,index) => {
-          return <PokemonCardComponent key={index} name={pokemon.name} url={pokemon.url} />
+          return <locationInformatioLocationCardComponentn key={index} name={pokemon.name} url={pokemon.url} />
         })}
       </section>
       <section>
